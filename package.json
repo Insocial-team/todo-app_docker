@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node todo-app-back/index.js",
-    "dev": "nodemon todo-app-back/index.js",
+    "dev": "nodemon -L todo-app-back/index.js",
     "test": "echo \"No test specified\""
   },
   "repository": {
