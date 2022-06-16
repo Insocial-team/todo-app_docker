@@ -4,8 +4,8 @@
   "description": "como pija se prepara esto? tranquilos, yo tampoco le se al docker así que voy a ir poniendo como verga se hace aca",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node todo-app-back/index.js",
+    "dev": "nodemon -L todo-app-back/index.js",
     "test": "echo \"No test specified\""
   },
   "repository": {
@@ -13,10 +13,7 @@
     "url": "git+https://github.com/Trefu/todo-app-docker.git"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "http-errors": "^1.7.3",
-    "mongoose": "^5.7.13"
+    "nodemon": "^2.0.16"
   },
   "keywords": [],
   "author": "",

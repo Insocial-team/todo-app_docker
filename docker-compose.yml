@@ -17,11 +17,13 @@ services:
       - 4000:3000
     environment:
       PORT: 3000
-      MONGODB_URI=mongodb: mongodb://mongo_db:27017 
+      MONGODB_URI: mongodb://mongo_db:27017
       DB_NAME: my_db
       NAME: trefu
     depends_on:
       - todo_mongo
+    volumes:
+      - .:/usr/src/app
 
 volumes:
   mongo_db: {}
